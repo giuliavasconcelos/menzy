@@ -74,7 +74,7 @@ footer{
 
 }
 .socials a:hover i{
-    color: aqua;
+    color: #723CBC;
 }
 
 .footer-bottom{
@@ -91,7 +91,7 @@ float: left;
     text-transform: capitalize;
 }
 .footer-bottom p a{
-  color:#44bae8;
+  color: #723CBC;
   font-size: 16px;
   text-decoration: none;
 }
@@ -116,7 +116,7 @@ display: block;
   text-decoration: none;
 }
 .footer-menu ul li a:hover{
-  color: #27bcda;
+  color: #723CBC;
 }
 
 @media (max-width:500px) {
