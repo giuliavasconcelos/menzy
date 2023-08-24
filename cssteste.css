@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    tra
+}
+
+.navbar{
+    background-color: #333 !important;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: white !important;
+
+}
+
+.carousel {
+    width: 2000px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.carousel-item img {
+    height: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+.cartões {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-midth: 768px) {
+    .cartões {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+    
+}
