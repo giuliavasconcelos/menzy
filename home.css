@@ -298,3 +298,8 @@ margin-bottom: 20px;
   background-color: #111;
   border-color: #723CBC;
 }
+
+.card-img-top {
+  width: 286px;
+  height: 200px;
+}
