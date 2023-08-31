@@ -1,0 +1,83 @@
+/* Define uma fonte padrão para todos os elementos */
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Estilos gerais para o corpo da página */
+  body {
+    background-color: #252525; /* Cor de fundo do corpo */
+    color: #FFF; /* Cor do texto */
+  }
+  
+  /* Classes para diferentes cores de fundo */
+  .primary-bg-color {
+    background-color: #252525;
+  }
+  .destaque {
+    background-color: #0D0D0D;
+  }
+  .secondary-bg-color {
+    background-color: #976DF2;
+  }
+  .light-bg-color {
+    background-color: #FCF5EB;
+  }
+  .dark-bg-color {
+    background-color: #0D0D0D;
+  }
+  
+  /* Classes para diferentes cores de texto */
+  .primary-color {
+    color: #976DF2;
+  }
+  .secondary-color {
+    color: #F2F2F2;
+  }
+  .light-color {
+    color: #FCF5EB;
+  }
+  
+  
+  
+  /* ___________________________________________________________ */
+  /* Estilos para os banners */
+  
+  /* Define espaçamento interno para o contêiner de banners */
+  #banners-container {
+    padding: 0;
+  }
+  
+  /* Posicionamento e espaçamento para a legenda do carousel */
+  .carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+  }
+  
+  /* Estilos para o título na legenda do carousel */
+  .carousel-caption h5 {
+    font-size: 1.8em;
+  }
+  
+  /* Media query para telas com largura mínima de 768px */
+  @media(min-width: 768px) {
+    /* Ajusta altura dos itens do carousel e imagens */
+    #slider .carousel-item,
+    #slider img {
+      height: 600px;
+    }
+  
+    /* Ajusta posicionamento e espaçamento da legenda do carousel */
+    .carousel-caption {
+      left: 23%;
+      right: 23%;
+    }
+  
+    /* Ajusta tamanho do título na legenda do carousel */
+    .carousel-caption h5 {
+      font-size: 4em;
+    }
+  }
+  
+  
