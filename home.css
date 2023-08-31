@@ -106,7 +106,7 @@ body {
   /* Ajusta altura dos itens do carousel e imagens */
   #slider .carousel-item,
   #slider img {
-    height: 600px;
+    height: 700px;
   }
 
   /* Ajusta posicionamento e espaçamento da legenda do carousel */
@@ -120,7 +120,7 @@ body {
     font-size: 4em;
   }
 }
-/*footer*/
+
 /* *{
   margin: 0;
   padding: 0;
@@ -130,15 +130,20 @@ body{
   background: #fcfcfc;
   font-family: sans-serif;
 } */
+/* ___________________________________________________________________________________________________ */
+/* Footer */
+
+
+
 footer{
   position: absolute;
-  bottom: 0;
+  bottom: 50;
   left: 0;
-  right: 0;
+  right: 40px;
   background: #111;
   height: auto;
   width: 100vw;
-
+ 
   padding-top: 40px;
   color: #fff;
 }
@@ -169,17 +174,17 @@ footer{
   font-size: 14px;
   color: #cacdd2;
 }
-.socials{
+.social{
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 0 3rem 0;
 }
-.socials li{
+.social li{
   margin: 0 10px;
 }
-.socials a{
+.social a{
   text-decoration: none;
   color: #fff;
   border: 1.1px solid white;
@@ -188,7 +193,7 @@ footer{
   border-radius: 50%;
 
 }
-.socials a i{
+.social a i{
   font-size: 1.1rem;
   width: 20px;
 
@@ -196,7 +201,7 @@ footer{
   transition: color .4s ease;
 
 }
-.socials a:hover i{
+.social a:hover i{
   color: #723CBC;
 }
 
@@ -249,4 +254,3 @@ margin-top: 10px;
 margin-bottom: 20px;
 }
 }
-
