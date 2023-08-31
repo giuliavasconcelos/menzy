@@ -161,7 +161,7 @@ textarea.input {
 
 .button:hover {
   background-color: transparent;
-  color: beige;
+  color: #680291;
 }
 
 .input-container span {
@@ -242,7 +242,7 @@ textarea.input {
 }
 
 .social-media p {
-  color: #fafafa;
+  color: #fff9f9;
 }
 
 .social-icons {
