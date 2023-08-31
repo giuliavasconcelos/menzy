@@ -161,7 +161,7 @@ textarea.input {
 
 .button:hover {
   background-color: transparent;
-  color: #680291;
+  color: #ffffff;
 }
 
 .input-container span {
@@ -303,11 +303,6 @@ textarea.input {
     height: 350px;
   }
 
-  .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
-  }
 
   .text {
     margin: 1rem 0 1.5rem 0;
@@ -327,10 +322,7 @@ textarea.input {
     display: none;
   }
 
-  .square,
-  .big-circle {
-    display: none;
-  }
+
 
   form,
   .contact-info {
@@ -361,7 +353,7 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 
-  .btn {
+  .button {
     padding: 0.45rem 1.2rem;
   }
 }
