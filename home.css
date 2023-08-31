@@ -9,10 +9,6 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-family: sans-serif;
 }
-/* html {
-    margin: 0 !important;
-    padding: 0 !important;
-} */
 
 .navbar {
   background-color: black !important;
@@ -35,6 +31,7 @@ body{
 .roxo{
   color: #743BBC!important;
 }
+
 
 .logo {
   width: 130px;
@@ -268,8 +265,6 @@ margin-bottom: 20px;
 }
 
 
-
-
 @media (max-width: 768px){
   .cartoes {
       flex-direction: column;
@@ -303,3 +298,7 @@ margin-bottom: 20px;
 }
 
 
+.card-img-top {
+  width: 286px;
+  height: 200px;
+}
