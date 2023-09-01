@@ -1,3 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
 /*header*/
 *{
   margin: 0;
@@ -296,6 +302,17 @@ margin-bottom: 20px;
 .card{
   margin-bottom: 20px;
   background-color: #111;
+}
+
+.centered {
+  margin-top: 3%;
+  text-align: center;
+  width: 100%; /* Opcional: torna o h1 ocupar toda a largura da página */
+  color: #723CBC;
+}
+
+.centered:hover{
+  color: #cacdd2;
 }
 
 .card-title {

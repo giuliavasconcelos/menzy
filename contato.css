@@ -50,7 +50,7 @@ textarea {
 .container {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: 95vh;
   padding: 2rem;
   background-color: #000000;
   overflow: hidden;
@@ -58,9 +58,7 @@ textarea {
   align-items: center;
   justify-content: center;
   
-  
-
-}
+   }
 
 .form {
   width: 100%;
