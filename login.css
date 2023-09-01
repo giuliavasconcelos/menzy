@@ -1,6 +1,5 @@
 /* POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 *{  
     margin: 0;
     padding: 0;
@@ -8,11 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("assets/login3.jpg");
+    background: url("images/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
+    background-image: url(assets/login3.jpg)
 }
 .wrapper{
     display: flex;
@@ -33,7 +33,7 @@ body{
     z-index: 100;
 }
 .nav-logo p{
-    color: white;
+    color: #723CBC;
     font-size: 25px;
     font-weight: 600;
 }
@@ -46,12 +46,12 @@ body{
 .nav-menu ul li .link{
     text-decoration: none;
     font-weight: 500;
-    color: #723CBC;
+    color: #fff;
     padding-bottom: 15px;
     margin: 0 25px;
 }
 .link:hover, .active{
-    border-bottom: 2px solid #723CBC;
+    border-bottom: 2px solid #fff;
 }
 .nav-button .btn{
     width: 130px;
@@ -105,7 +105,7 @@ body{
     transition: .5s ease-in-out;
 }
 .top span{
-    color: #fff;
+    color: #723CBC;
     font-size: small;
     padding: 10px 0;
     display: flex;
@@ -128,7 +128,7 @@ header{
 }
 .input-field{
     font-size: 15px;
-    background: #713cbc91;
+    background: #7940c997;
     color: #fff;
     height: 50px;
     width: 100%;
@@ -139,7 +139,7 @@ header{
     transition: .2s ease;
 }
 .input-field:hover, .input-field:focus{
-    background: transparent;
+    background: rgba(255, 255, 255, 0.15);
 }
 ::-webkit-input-placeholder{
     color: #fff;
@@ -240,4 +240,6 @@ header{
         gap: 0;
     }
 }
+
+
 
