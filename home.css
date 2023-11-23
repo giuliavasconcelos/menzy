@@ -1,9 +1,3 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-
-
 /*header*/
 *{
   margin: 0;
@@ -11,12 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Montserrat', sans-serif;
-  font-family: sans-serif;
-}
-
-
-element.style {
+  font-family: 'Montserrat';
 }
 .navbar-toggler-icon {
   background-color: #743BBC
