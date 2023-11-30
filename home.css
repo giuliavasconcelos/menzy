@@ -11,7 +11,7 @@ body{
   background-color: #743BBC
 }
 .navbar {
-  background-color: black !important;
+  background-color: #111 !important;
   height: 90px;
   margin-top: 0;
   padding-top: 0;
@@ -23,8 +23,8 @@ body{
 }
 
 .bi {
-  font-size: 30px;
-  padding-right: 30px;
+  font-size: 28px;
+  padding-right: 28px;
   
 }
 
@@ -34,8 +34,8 @@ body{
 
 
 .logo {
-  width: 130px;
-  height: 40px;
+  width: 195px;
+  height: 50px;
   
 }
 
