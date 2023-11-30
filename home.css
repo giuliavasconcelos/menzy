@@ -95,58 +95,48 @@ body {
 /* Estilos para os banners */
 
 /* Define espaçamento interno para o contêiner de banners */
-#banners-container {
-  padding: 0;
-}
 
-/* Posicionamento e espaçamento para a legenda do carousel */
-.carousel-caption {
+/* .carousel-inner {
+  height: 500px;
+  transition: 6s;
   bottom: 5em;
   padding: 1em;
   left: 12%;
   right: 12%;
 }
 
-/* Estilos para o título na legenda do carousel */
-.carousel-caption h5 {
-  font-size: 1.8em;
+.carousel-item {
+  height: 500px;
 }
+#banners-container {
+  padding: 0;
+}
+
+/* Posicionamento e espaçamento para a legenda do carousel */
+/* .carousel-caption {
+  bottom: 5em;
+  padding: 1em;
+  left: 12%;
+  right: 12%;
+} */ 
+
+
+
+/* Estilos para o título na legenda do carousel */
 
 /* Media query para telas com largura mínima de 768px */
-@media(min-width: 768px) {
+/* @media(min-width: 768px) {
   /* Ajusta altura dos itens do carousel e imagens */
-  #slider .carousel-item,
+  /* #slider .carousel-item,
   #slider img  {
-    height: 700px;
-  }
+    height: 500px;
+    width: 100%;
+  } */
+/* } */ 
 
-  /* Ajusta posicionamento e espaçamento da legenda do carousel */
-  .carousel-caption {
-    left: 23%;
-    right: 23%;
-  }
-
-  /* Ajusta tamanho do título na legenda do carousel */
-  .carousel-caption h5 {
-    font-size: 4em;
-  }
-}
-
-
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background: #fcfcfc;
-  font-family: sans-serif;
-} */
 /* ___________________________________________________________________________________________________ */
+
 /* Footer */
-
-
-
 footer{
   position: absolute;
   bottom: 50;
