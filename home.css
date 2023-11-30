@@ -55,6 +55,11 @@ body{
 /* _______________________________________________________________________________ */
 /*carousel*/
 
+.carousel-inner {
+  height: 500px !important;
+}
+
+
 /* Estilos gerais para o corpo da página */
 body {
   background-color: #000000; /* Cor de fundo do corpo */

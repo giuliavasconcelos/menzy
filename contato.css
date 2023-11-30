@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 
 /* Header */
 
@@ -6,12 +6,12 @@
   background-color: black !important;
   height: 90px;
   margin-top: 0;
-  padding-top: 0;
+  padding: 0;
 
 }
 
 .navbar .navbar-brand , .navbar .nav-link {
-  color: #743BBC!important;
+  color: #723CBC!important;
 }
 
 .bi {
@@ -21,7 +21,7 @@
 }
 
 .roxo{
-  color: #743BBC!important;
+  color: #723CBC!important;
 }
 
 .logo {
@@ -34,16 +34,13 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   
   
 }
 
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: 'Montserrat';
 
 }
 
@@ -51,31 +48,32 @@ textarea {
   position: relative;
   width: 100%;
   min-height: 95vh;
-  padding: 2rem;
   background-color: #000000;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+ 
    }
 
 .form {
   width: 100%;
   max-width: 820px;
-  background-image: url(assets/contact\ us-fotor-2023082510233.jpg);
+  background-image: url(assets/contato/pexels-marjan.jpg);
   background-size: 410px;
   border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(173, 172, 172, 0.1);
   z-index: 1000;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  
+  
 }
 
 .contact-form {
-  background-color: #680291;
+  background-color: #723CBC;
   position: relative;
+  
 }
 
 
@@ -149,7 +147,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #ffffff;
   font-size: 0.95rem;
-  color: #680291;
+  color:#723CBC;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -183,7 +181,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #680291;
+  background-color: #723CBC;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -215,11 +213,11 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #812ea2;
+  color: #723CBC;
 }
 
 .text {
-  color: #fffdfd;
+  color: #ffffff;
   margin: 1.5rem 0 2rem 0;
 }
 
@@ -234,31 +232,32 @@ textarea.input {
 .icon {
   width: 28px;
   margin-right: 0.7rem;
+  
+  
 }
 
 .social-media {
   padding: 2rem 0 0 0;
+  
 }
 
 .social-media p {
   color: #fff9f9;
 }
 
+
 .social-icons {
   display: flex;
   margin-top: 0.5rem;
+  background-color: transparent;
+  
+  
 }
 
 .social-icons a {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #9d00c0, #be4be4);
-  color: #fff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
+  text-decoration: none;
+  padding: 0px;
+  color: white;
 
 }
 
@@ -267,6 +266,8 @@ textarea.input {
 
 .social-icons a:hover {
   transform: scale(1.05);
+  color: #a37ed7;
+    
 }
 
 
