@@ -10,12 +10,12 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("assets/login3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    background-image: url(assets/login3.jpg)
+    background: url("../assets/login3.jpg") !important ;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important; 
+    overflow: hidden !important;
+    background-image: url(../assets/login3.jpg)!important;
 }
 .wrapper{
     display: flex;
@@ -34,10 +34,6 @@ body{
     line-height: 100px;
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
     z-index: 100;
-}
-.nav-logo p{
-    
-    
 }
 
 .nav-menu ul{
