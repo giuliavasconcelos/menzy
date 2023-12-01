@@ -1,7 +1,7 @@
 /* POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/*header*/
+/* header
 *{
     margin: 0;
     padding: 0;
@@ -40,8 +40,58 @@
     width: 300px;
     height: 60px;
     
-  }
+  } */
+  /*header*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat';
+}
+.navbar-toggler-icon {
+  background-color: #743BBC
+}
+.navbar {
+  background-color: #111 !important;
+  height: 90px;
+  margin-top: 0;
+  padding-top: 0;
+  z-index: 99;
+}
+
+.navbar .navbar-brand , .navbar .nav-link {
+  color: #743BBC!important;
+}
+
+.bi {
+  font-size: 28px;
+  padding-right: 28px;
   
+}
+
+.roxo{
+  color: #743BBC!important;
+}
+
+
+.logo {
+  width: 195px;
+  height: 50px;
+  
+}
+
+/* respansividade do header */
+
+@media screen and (max-width: 500px) {
+  /* .collapse  ul li a   */
+  #navbarSupportedContent li {
+    float: none !important;
+    display: block !important;
+  }
+}
+  /* ________________________________________________________________________ */
 *{  
     margin: 0;
     padding: 0;
@@ -60,7 +110,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: 100vh;
     background: rgba(39, 39, 39, 0.4);
 }
 .nav{
@@ -104,18 +154,31 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
+    padding-top: 50px;
+    
 }
 .btn:hover{
-    background: #723CBC;
+    /* background: #723CBC; */
+    background: rgba(255, 255, 255, 0.5);
 }
 #registerBtn{
-    margin-left: 15px;
+    margin-left: 45px;
+    align-items: center;
+    
+}
+#loginBtn {
+  margin-left: 95px;
+    align-items: center;
+    
 }
 .btn.white-btn{
     background: rgba(255, 255, 255, 0.7);
+    
+    
 }
 .btn.btn.white-btn:hover{
     background: rgba(255, 255, 255, 0.5);
+    
 }
 .nav-menu-btn{
     display: none;
@@ -126,7 +189,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 512px;
-    height: 420px;
+    height: 500px;
     overflow: hidden;
     z-index: 2;
 }
