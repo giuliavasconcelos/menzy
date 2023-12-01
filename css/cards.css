@@ -71,7 +71,8 @@ body {
 }
 
 .front {
-    background: url(assets/cards/taylor.jfif);
+    background: url(../assets/cards/taylor.jfif);
+    /* z-index: 99; */
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
@@ -81,7 +82,7 @@ body {
     color: #fff;
 }
 .front2 {
-    background: url(assets/cards/lana.jfif);
+    background: url(../assets/cards/lana.jfif);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
@@ -91,7 +92,7 @@ body {
     color: #fff;
 }
 .front3 {
-    background: url(assets/cards/drake.jfif);
+    background: url(../assets/cards/drake.jfif);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
@@ -101,7 +102,7 @@ body {
     color: #fff;
 }
 .front4 {
-    background: url(assets/cards/kanye.jfif);
+    background: url(../assets/cards/kanye.jfif);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
