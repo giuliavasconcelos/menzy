@@ -1,200 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menzy</title>
-
-    <!-- Link (Bootstrap) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-    <!-- LINK BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Link para (Bootstrap Icons) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-       <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
-
-    <!-- Link para (CSS) -->
-    <link rel="stylesheet" href="home.css">
-
-    <!-- Link para Favicon -->
-    <link rel="shortcut icon" href="assets/simbolo da logo transparente.png" type="image/x-icon">
-   
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
-
-    <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img class="logo" src="assets/menzy_logo_footer.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="home.html"><i class="bi bi-houses-fill roxo"></i></a> 
-               
-             </li>
-             <li class="nav-item">
-               <a href="#cartoes"><i class="bi bi-ticket-perforated roxo"></i></a>
-             </li>
-             <li class="nav-item">
-               <a href="login.html"><i class="bi bi-person-circle roxo"></i></a>
-             </li>
-             <li class="nav-item">
-               <a href="contato.html"><i class="bi bi-telephone-fill roxo"></i></a>
-             </li>
-            
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-  <!-- CAROUSEL -->
-  <!-- <div id="carousel" class="carousel slide" data-bs-ride="carousel"> -->
-  <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="assets/slides/bence.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="assets/slides/arturo.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="assets/slides/ella.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+<?php
+  include_once("templates/header.php");
+?>
+  <div class="container">
+    <?php if(isset($printMsg) && $printMsg != ''): ?>
+      <p id="msg"><?= $printMsg ?></p>
+    <?php endif; ?>
+    <h1 id="main-title">Cadastro de clientes</h1>
+    <?php if(count($contacts) > 0): ?>
+      <table class="table" id="contacts-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Email</th>
+            <th scope="col">Senha</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach($contacts as $contact): ?>
+            <tr>
+              <td scope="row" class="col-id"><?= $contact["id"] ?></td>
+              <td scope="row"><?= $contact["name"] ?></td>
+              <td scope="row"><?= $contact["phone"] ?></td>
+              <td scope="row"><?= $contact["email"] ?></td>
+              <td scope="row"><?= $contact["senha"] ?></td>
+              <td class="actions">
+                <a href="<?= $BASE_URL ?>show.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
+                <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a>
+                <form class="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="POST">
+                  <input type="hidden" name="type" value="delete">
+                  <input type="hidden" name="id" value="<?= $contact["id"] ?>">
+                  <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
+                </form>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+    <?php else: ?>  
+      <p id="empty-list-text">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL ?>create.php">clique aqui para adicionar</a>.</p>
+    <?php endif; ?>
   </div>
-    
-    <h1 class="centered">Eventos do momento</h1>
-
-
-    <!-- Cards -->
-
-<div class="cartoes" id="cartoes">
-  <div class="card" style="width: 18rem;">
-      <img src="assets/lana.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Show Lana Del Rey</h5>
-        <p class="card-text">Show</p>
-        <p class="card-text"> Ingressos a partir de R$420,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  <div class="card" style="width: 18rem;">
-      <img src="assets/pexels-mae-gregorio-1776151.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Color fest - SP</h5>
-        <p class="card-text">Festival</p>
-        <p class="card-text">Ingressos a partir de R$90,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  <div class="card" style="width: 18rem;">
-      <img src="assets/exposição carros 2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Bienal Automotiva - SP</h5>
-        <p class="card-text">Exposição</p>
-        <p class="card-text">Ingressos a partir de R$45,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img src="assets/circo.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Circo dos sonhos</h5>
-        <p class="card-text">Circo </p>
-        <p class="card-text"> Ingressos a partir de R$15,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  <div class="card" style="width: 18rem;">
-      <img src="assets/exposição de arte.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Exposição Artistas Independentes - Masp</h5>
-        <p class="card-text">Exposição</p>
-        <p class="card-text">Ingressos a partir de R$10,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  <div class="card" style="width: 18rem;">
-      <img src="assets/Parque de diversões.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Parque Happy Day</h5>
-        <p class="card-text">Parque de Diversões</p>
-        <p class="card-text">Ingressos a partir de R$50,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  <div class="card" style="width: 18rem;">
-      <img src="assets/feira oriental.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Feira Oriental</h5>
-        <p class="card-text">Festival cultural</p>
-        <p class="card-text">Ingressos a partir de R$30,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-  <div class="card" style="width: 18rem;">
-      <img src="assets/Festival de lanternas.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Festival de Lanternas</h5>
-        <p class="card-text">Festival</p>
-        <p class="card-text">Ingressos a partir de R$50,00</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
-      </div>
-    </div>
-</div>
-     
-<!-- ______________________________________________________________________ -->
-    <!-- Footer -->
-
-    <footer>
-        <div class="footer-content">
-            <img src="assets/menzy_logo_footer.png" alt="logo">
-            <p>Sempre conectando você aos melhores eventos.</p>
-            <ul class="social">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy; <a href="#">Menzy</a>  </p>
-                    <div class="footer-menu">
-                      <ul class="f-menu">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="home.html">Ticket</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="login.html">Perfil</a></li>
-                      </ul>
-                    </div>
-        </div>
-  
-    </footer>
-    
-</body>
-</html>
+<?php
+  include_once("templates/footer.php");
+?>
