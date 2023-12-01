@@ -3,4 +3,16 @@ body{
     justify-content: center;
     text-align: center;
     display: block;
+    font-family: 'Montserrat';
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: #743BBC;
+    color: white;
+    border-radius: 20px;
+    padding: 0.6rem 1.3rem;
+    font-size: 0.95rem;
+    font-family: 'Montserrat';
 }
