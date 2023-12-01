@@ -1,21 +1,10 @@
 /*header*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Montserrat';
-}
-.navbar-toggler-icon {
-  background-color: #743BBC
-}
 .navbar {
-  background-color: #111 !important;
+  background-color: black !important;
   height: 90px;
   margin-top: 0;
   padding-top: 0;
-  z-index: 99;
+
 }
 
 .navbar .navbar-brand , .navbar .nav-link {
@@ -23,22 +12,20 @@ body{
 }
 
 .bi {
-  font-size: 28px;
-  padding-right: 28px;
-  
+  font-size: 30px;
+  padding-right: 30px;
+ 
 }
 
 .roxo{
   color: #743BBC!important;
 }
 
-
 .logo {
-  width: 195px;
-  height: 50px;
-  
+  width: 130px;
+  height: 40px;
+  /* margin-left: -6%; */
 }
-
 
 /* respansividade do header */
 
