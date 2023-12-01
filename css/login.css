@@ -10,12 +10,12 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("images/1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    background-image: url(assets/login3.jpg)
+    background: url("../assets/login3.jpg")  ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ; 
+    overflow: hidden ;
+    background-image: url(../assets/login3.jpg);
 }
 .wrapper{
     display: flex;
@@ -23,6 +23,8 @@ body{
     align-items: center;
     /* min-height: 100vh; */
     background: rgba(39, 39, 39, 0.4);
+    padding-top: 90px;
+    
 }
 .nav{
     position: fixed;
@@ -34,10 +36,6 @@ body{
     line-height: 100px;
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
     z-index: 100;
-}
-.nav-logo p{
-    
-    
 }
 
 .nav-menu ul{
@@ -258,128 +256,145 @@ header{
     }
 }
 
+
+
 /* Footer */
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+    
+} */
 footer{
     position: absolute;
-    bottom: 50;
+    bottom: 0;
     left: 0;
-    right: 40px;
+    right: 0;
     background: #111;
     height: auto;
     width: 100vw;
-   
-    padding-top: 40px;
+
+    padding-top: 100px;
     color: #fff;
-  }
-  .footer-content{
+}
+.footer-content{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
-  .footer-content h3{
+    
+    
+}
+.footer-content h3{
     font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
-  }
-  
-  .footer-content img{
+    padding-top: 90px;
+}
+
+.footer-content img{
     height: 70px;
     width: 225px;
-  
-  }
-  
-  .footer-content p{
+
+}
+
+.footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
-  }
-  .social{
+}
+.socials{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
-  }
-  .social li{
+}
+
+.socials li{
     margin: 0 10px;
-  }
-  .social a{
+}
+.socials a{
     text-decoration: none;
     color: #fff;
     border: 1.1px solid white;
     padding: 5px;
-  
+
     border-radius: 50%;
-  
-  }
-  .social a i{
+
+}
+.socials a i{
     font-size: 1.1rem;
     width: 20px;
-  
-  
+
+
     transition: color .4s ease;
-  
-  }
-  .social a:hover i{
+
+}
+.socials a:hover i{
     color: #723CBC;
-  }
-  
-  .footer-bottom{
+}
+
+.footer-bottom{
     background: #000;
     width: 100vw;
     padding: 20px;
-  padding-bottom: 40px;
+padding-bottom: 40px;
     text-align: center;
-  }
-  .footer-bottom p{
-  float: left;
+    
+}
+.footer-bottom p{
+float: left;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-  }
-  .footer-bottom p a{
+}
+.footer-bottom p a{
   color: #723CBC;
   font-size: 16px;
   text-decoration: none;
-  }
-  .footer-bottom span{
+}
+.footer-bottom span{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
-  }
-  .footer-menu{
+}
+.footer-menu{
   float: right;
-  
-  }
-  .footer-menu ul{
+
+}
+.footer-menu ul{
   display: flex;
-  }
-  .footer-menu ul li{
-  padding-right: 10px;
-  display: block;
-  }
-  .footer-menu ul li a{
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
   color: #cfd2d6;
   text-decoration: none;
-  }
-  .footer-menu ul li a:hover{
+}
+.footer-menu ul li a:hover{
   color: #723CBC;
-  }
-  
-  @media (max-width:500px) {
-  .footer-menu ul{
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
   display: flex;
   margin-top: 10px;
   margin-bottom: 20px;
-  }
+}
+}
+
+
   /* respansividade do header */
   
   @media screen and (max-width: 500px) {
@@ -389,7 +404,7 @@ footer{
       display: block !important;
     }
   }
-  }
+  
 
 
 
