@@ -1,5 +1,5 @@
 /*header*/
-/* .navbar {
+.navbar {
     background-color: black !important;
     height: 90px;
     margin-top: 0;
@@ -19,23 +19,23 @@
   
   .roxo{
     color: #743BBC!important;
-  } */
+  } 
   
-  /* .logo {
+  .logo {
     width: 130px;
-    height: 40px; */
-    /* margin-left: -6%; */
-  /* } */
+    height: 40px; 
+    margin-left: -6%;
+  } 
   
   /* respansividade do header */
   
-  /* @media screen and (max-width: 500px) { */
-    /* .collapse  ul li a   */
-    /* #navbarSupportedContent li {
+  @media screen and (max-width: 500px) {
+    .collapse  ul li a, 
+    #navbarSupportedContent li {
       float: none !important;
       display: block !important;
     }
-  } */
+  }
 
 /* PAGAMENTO */
 * {
