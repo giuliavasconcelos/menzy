@@ -6,15 +6,16 @@
   body {
     /* background: #000; */
     font-family: 'Lato', sans-serif;
+    background: #000;
   }
   
   h4 {
-    color: #000;
+    color: green;
   }
   
   body > header {
     background: #111;
-    color: white;
+    color: green;
     font-size: 24px;
     padding: 20px 0;
     display: -webkit-box;
@@ -26,7 +27,7 @@
   }
   
   body > main {
-    background: #000;
+    /* background: #000; */
     padding: 0 30px 30px;
   }
   
@@ -107,7 +108,7 @@
   }
   
   .produto .info .name {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -153,7 +154,7 @@
   }
   
   .qty button:hover {
-    background: #935fa1;
+    background: #743BBC;
   }
   
   /* Remover produto */
@@ -255,7 +256,7 @@
     border: 0;
     padding: 15px 0;
     color: white;
-    background: #935fa1;
+    background: #743BBC;
     display: block;
     width: 100%;
     text-transform: uppercase;
