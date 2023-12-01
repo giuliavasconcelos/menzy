@@ -1,5 +1,5 @@
 /*header*/
-.navbar {
+/* .navbar {
     background-color: black !important;
     height: 90px;
     margin-top: 0;
@@ -19,23 +19,23 @@
   
   .roxo{
     color: #743BBC!important;
-  }
+  } */
   
-  .logo {
+  /* .logo {
     width: 130px;
-    height: 40px;
+    height: 40px; */
     /* margin-left: -6%; */
-  }
+  /* } */
   
   /* respansividade do header */
   
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) { */
     /* .collapse  ul li a   */
-    #navbarSupportedContent li {
+    /* #navbarSupportedContent li {
       float: none !important;
       display: block !important;
     }
-  }
+  } */
 
 /* PAGAMENTO */
 * {
@@ -47,6 +47,8 @@
     /* background: #000; */
     font-family: 'Montserrat';
     background: #000;
+    width: 100%;
+    height: 100%;
   }
   
   h4 {
@@ -366,6 +368,8 @@
         background: #fcfcfc;
         font-family: sans-serif;
     } */
+
+    /* FOOTER */
     footer{
         position: absolute;
         bottom: 0;
@@ -439,10 +443,11 @@
     
     .footer-bottom{
         background: #000;
-        width: 100vw;
+        width: 100%;
         padding: 20px;
-    padding-bottom: 40px;
+        padding-bottom: 40px;
         text-align: center;
+        height: 80%;
     }
     .footer-bottom p{
     float: left;
@@ -462,7 +467,6 @@
     }
     .footer-menu{
       float: right;
-    
     }
     .footer-menu ul{
       display: flex;
