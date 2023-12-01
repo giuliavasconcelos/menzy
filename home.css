@@ -1,44 +1,36 @@
 /*header*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: rgba(39, 39, 39, 0.4);
 }
-body{
-  font-family: 'Montserrat';
-}
-.navbar-toggler-icon {
-  background-color: #743BBC
-}
-.navbar {
-  background-color: #111 !important;
-  height: 90px;
-  margin-top: 0;
-  padding-top: 0;
-  z-index: 99;
-}
-
-.navbar .navbar-brand , .navbar .nav-link {
-  color: #743BBC!important;
+.nav{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+  z-index: 100;
 }
 
-.bi {
-  font-size: 28px;
-  padding-right: 28px;
-  
+.nav-menu ul{
+  display: flex;
 }
-
-.roxo{
-  color: #743BBC!important;
+.nav-menu ul li{
+  list-style-type: none;
 }
-
-
-.logo {
-  width: 195px;
-  height: 50px;
-  
+.nav-menu ul li .link{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
 }
-
 
 /* respansividade do header */
 
