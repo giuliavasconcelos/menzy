@@ -1,4 +1,16 @@
 
+.container-header {
+  position: relative;
+  width: 100%;
+  min-height: 95vh;
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+   }
+
 .navbar {
   background-color: black !important;
   height: 90px;
