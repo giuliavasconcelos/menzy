@@ -17,11 +17,12 @@ body{
     overflow: hidden ;
     background-image: url(../assets/login3.jpg);
 }
+
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
+    min-height: 100vh; 
     background: rgba(39, 39, 39, 0.4);
     padding-top: 90px;
     
@@ -64,7 +65,7 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
-    /* padding-top: 50px; */
+    padding-top: 50px; 
     margin-bottom: 30px;
     
 }
@@ -200,6 +201,7 @@ header{
 .two label a:hover{
     text-decoration: underline;
 }
+
 @media only screen and (max-width: 786px){
     .nav-button{
         display: none;
@@ -264,11 +266,13 @@ header{
     padding: 0;
     box-sizing: border-box;
 }
-/* body{
+
+body{
     background: #fcfcfc;
     font-family: sans-serif;
     
-} */
+}
+
 footer{
     position: absolute;
     bottom: 0;
@@ -281,7 +285,7 @@ footer{
     padding-top: 100px;
     color: #fff;
 }
-.footer-content{
+.footer-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,7 +294,7 @@ footer{
     
     
 }
-.footer-content h3{
+.footer-container h3{
     font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
@@ -298,13 +302,13 @@ footer{
     padding-top: 90px;
 }
 
-.footer-content img{
+.footer-container img{
     height: 70px;
     width: 225px;
 
 }
 
-.footer-content p{
+.footer-container p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
