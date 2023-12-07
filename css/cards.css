@@ -73,14 +73,14 @@
     background-image: url(../assets/cards/kanye.jfif);
     background-blend-mode: soft-light;
   }
-  .card__img {
+  .card__img5 {
     background-size: cover;
     height: 17rem;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     /* background-image: linear-gradient(
       rgb(24,24,24), rgb(24,24,24)
     ), url(../assets/cards/taylor.jfif); */
-    background-image: url(../assets/cards/taylor.jfif);
+    background-image: url(../assets/cards/matue.jfif);
     background-blend-mode: soft-light;
   }
   .card__img {
