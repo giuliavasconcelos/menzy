@@ -70,8 +70,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
- 
-   }
+  font-family: 'Montserrat';
+}
 
 .form {
   width: 100%;
@@ -383,7 +383,7 @@ footer{
   background: #111;
   height: auto;
   width: 100vw;
-  
+  font-family: 'Montserrat';
   padding-top: 40px;
   color: #fff;
 }
