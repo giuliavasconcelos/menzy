@@ -17,16 +17,18 @@ body{
     overflow: hidden ;
     background-image: url(../assets/login3.jpg);
 }
-.wrapper{
+
+/* Header */
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
     /* min-height: 100vh; */
-    background: rgba(39, 39, 39, 0.4);
+    background: black;
     padding-top: 90px;
     
 }
-.nav{
+.nav-header{
     position: fixed;
     top: 0;
     display: flex;
@@ -34,25 +36,33 @@ body{
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    background: black;
     z-index: 100;
 }
 
-.nav-menu ul{
+.nav-menu-header ul{
     display: flex;
+    padding-left: 90%;
 }
-.nav-menu ul li{
+.nav-menu-header ul li{
     list-style-type: none;
 }
-.nav-menu ul li .link{
+.nav-menu-header ul li .link-header{
     text-decoration: none;
     font-weight: 500;
     color: #fff;
     padding-bottom: 15px;
     margin: 0 25px;
+    
 }
-.link:hover, .active{
+.link-header:hover, .active{
     border-bottom: 2px solid #fff;
+}
+
+.img-header {
+    height: 50px;
+    width: 150px;
+    margin-top: 23px;
 }
 .nav-button .btn{
   color: #fff;
