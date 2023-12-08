@@ -6,7 +6,7 @@
     <title>Footer</title>
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
 
     <!-- LINK BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <footer>
+    <!-- <footer>
         <div class="footer-content">
             <img src="../assets/menzy_logo_footer.png" alt="logo">
             <p>Sempre conectando você aos melhores eventos.</p>
@@ -38,7 +38,7 @@
                     </div>
         </div>
 
-    </footer>
+    </footer> -->
 
 </body>
 </html>
