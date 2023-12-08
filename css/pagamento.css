@@ -1,14 +1,10 @@
 /* PAGAMENTO */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat';
   margin: 0;
   padding: 0;
   background: #000;
   background-color: #000;
-}
-
-br {
-  background: #000;
 }
 
 main {
@@ -49,9 +45,9 @@ th, td {
   color: #fff;
 }
 
-.produto img {
-  width: 1000px;
-  height: 1000px;
+.produto-img-pexel {
+  width: 1100px;
+  height: 1020px;
   object-fit: cover;
   margin-right: 10px;
 }
@@ -387,17 +383,18 @@ aside > a button:hover {
   } */ 
 
     /* FOOTER */
-    * {
+    /* * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Montserrat';
       
-  }
+  } */
   
   body {
       font-weight: 400;
       background-color: #000 !important; 
+      font-family: 'Montserrat' !important;
   }
   
   .footer {
@@ -407,7 +404,7 @@ aside > a button:hover {
   
   .footer img {
       width: 15%;
-      vertical-align: middle;
+      vertical-align: text-bottom;
   }
   
   .logoF {
