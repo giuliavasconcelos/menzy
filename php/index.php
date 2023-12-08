@@ -1,5 +1,5 @@
 <?php
-  include_once("templates/header.php");
+  include_once("../templates/header.php");
 ?>
   <div class="container">
     <?php if(isset($printMsg) && $printMsg != ''): ?>
@@ -27,9 +27,9 @@
               <td scope="row"><?= $contact["email"] ?></td>
               <td scope="row"><?= $contact["senha"] ?></td>
               <td class="actions">
-                <a href="<?= $BASE_URL ?>show.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
-                <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a>
-                <form class="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="POST">
+                <a href="<?= $BASE_URL ?>../php/show.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
+                <a href="<?= $BASE_URL ?>../php/edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a>
+                <form class="delete-form" action="<?= $BASE_URL ?>../config/process.php" method="POST">
                   <input type="hidden" name="type" value="delete">
                   <input type="hidden" name="id" value="<?= $contact["id"] ?>">
                   <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
@@ -40,9 +40,9 @@
         </tbody>
       </table>
     <?php else: ?>  
-      <p id="empty-list-text">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL ?>create.php">clique aqui para adicionar</a>.</p>
+      <p id="empty-list-text">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL ?>../php/create.php">clique aqui para adicionar</a>.</p>
     <?php endif; ?>
   </div>
 <?php
-  include_once("templates/footer.php");
+  include_once("../templates/footer.php");
 ?>

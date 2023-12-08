@@ -2,8 +2,8 @@
 
   session_start();
 
-  include_once("connection.php");
-  include_once("url.php");
+  include_once("../config/connection.php");
+  include_once("../config/url.php");
 
   $data = $_POST;
 
@@ -97,7 +97,7 @@
     }
 
     // Redirect HOME
-    header("Location:" . $BASE_URL . "../index.php");
+    header("Location:" . $BASE_URL . "../php/index.php");
 
   // SELEÇÃO DE DADOS
   } else {

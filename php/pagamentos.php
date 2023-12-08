@@ -1,4 +1,4 @@
-<?php include 'pagamentos.html'; ?>
+<?php include '../html/pagamentos.html'; ?>
 
 <?php
 // Inicialização do carrinho de compras (usando uma sessão para armazenar os itens temporariamente)
