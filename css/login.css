@@ -72,11 +72,11 @@ header{
     margin-top: 5px;
   }
   .nav-button .btn{
-  color: #fff;
+    color: #fff;
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.4);
+    background: #737373;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -85,13 +85,13 @@ header{
     margin-bottom: 30px;
     
   }
-  ORM BOX */
+
 .nav-button .btn{
   color: #fff;
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.4);
+    background: #737373;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -125,7 +125,7 @@ header{
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.4);
+    background: #737373;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -141,11 +141,12 @@ header{
 
 /* FORM BOX */
 .nav-button .btn{
-  color: #fff;
+    color: #fff;
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.4);
+    /* background: rgba(255, 255, 255, 0.4); */
+    background: #bbbb;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -174,6 +175,10 @@ header{
     
 }
 .btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+    
+}
+.btn.btn:hover{
     background: rgba(255, 255, 255, 0.5);
     
 }
