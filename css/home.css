@@ -290,6 +290,11 @@ body {
   color: #cacdd2;
 }
 
+.card-text-preço {
+  padding-bottom: 20px;
+  color: #cacdd2;
+}
+
 .btn  {
   background-color: #743BBC;
   border-color: #723CBC;
