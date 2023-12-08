@@ -289,14 +289,15 @@ textarea.input {
   margin-top: 0.5rem;
   background-color: transparent;
   
-  
 }
 
 .social-icons a {
   text-decoration: none;
   padding: 0px;
   color: white;
-
+  width: 50px;
+  height: 20px;
+  font-size: 30px;
 }
 
 
