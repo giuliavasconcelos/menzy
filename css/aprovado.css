@@ -4,11 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
+  min-height: 100vh; 
   background: black;
   padding-top: 90px;
-  
 }
+
 .nav-header{
   position: fixed;
   top: 0;
@@ -55,34 +55,63 @@ color: #fff;
   border-radius: 30px;
   cursor: pointer;
   transition: .3s ease;
-  /* padding-top: 50px; */
-  margin-bottom: 30px;
+  padding-top: 50px;
+   margin-bottom: 30px;
   
-}
+} 
 
 body {
   font-family: 'Montserrat';
-}
+  background: #000;
+} 
 
   
-  /* RESPONSIVIDADE */
-  
-  /* @media screen and (max-width: 500px) {
-    .collapse  ul li a  
-    #navbarSupportedContent li {
-      float: none !important;
-      display: block !important;
-    }
-  } */
-
 /* APROVADO */
-/* body{
-  font-family: 'Montserrat';
-  background-color: black;
-  height: 500px !important;
+
+#container-aprovado {
+  text-align: center;
+  padding: auto;
 }
 
-.container-aprovado{
+.container-aprovado h1 {
+  color: white;
+}
+
+.container-aprovado svg {
+  width: 100px; /* Defina a largura desejada */
+  height: 100px; /* Defina a altura desejada */
+}
+
+.container-aprovado h3 {
+  margin-top: 10px; /* Espaçamento superior para o elemento h3 */
+  color: white;
+}
+
+.container-aprovado a {
+  display: block; /* Torna o link um bloco para ocupar a largura total disponível */
+  margin-top: 20px; /* Espaçamento superior para o link */
+}
+
+.container-aprovado button {
+  padding: 10px 20px; /* Adapte o preenchimento conforme necessário */
+  border-radius: 25px;
+  background-color: #723CBC;
+  color: white;
+}
+
+/* body{ */
+  /* margin-top: 150px; */
+  /* justify-content: center;
+  text-align: center;
+  display: block; */
+  /* font-family: 'Montserrat';
+  background-color: black; */
+  /* color: white; */
+  /* height: 500px !important; */
+  /* height: auto; */
+/* } */
+
+/* .container-aprovado{
   margin-top: 150px;
   justify-content: center;
   text-align: center;
@@ -92,7 +121,6 @@ body {
   height: 150px !important;
   background-color: #000;
 }
-
 button {
   background-color: #743BBC;
   color: white;
@@ -100,32 +128,9 @@ button {
   padding: 0.6rem 1.3rem;
   font-size: 0.95rem;
   font-family: 'Montserrat';
-}
-
-.agradecimento{
-align-items: center;
-}
-
-.icone-aprovado {
-  width: 200;
-   height: 200;
-    color: green;
-     fill: currentColor;
-     
 } */
+
 /* FOOTER */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat';
-}
-
-body {
-  font-weight: 400;
-  background-color: #000;
-} */
-
 .footer {
   padding: 40px 0;
   background-color: black;
