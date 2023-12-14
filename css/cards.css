@@ -1,3 +1,70 @@
+/* HEADER */
+.header1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: black;
+  padding-top: 90px;
+  
+}
+.nav-header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: black;
+  z-index: 100;
+}
+
+.nav-menu-header ul{
+  display: flex;
+  padding-left: 90%;
+}
+.nav-menu-header ul li{
+  list-style-type: none;
+}
+.nav-menu-header ul li .link-header{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+  
+}
+.link-header:hover, .active{
+  border-bottom: 2px solid #fff;
+}
+
+.img-header {
+  height: 50px;
+  width: 150px;
+  margin-top: 23px;
+}
+.nav-button .btn{
+color: #fff;
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s ease;
+  /* padding-top: 50px; */
+  margin-bottom: 30px;
+  
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+
+/* CARDS */
 * {
   margin: 0;
   padding: 0;
@@ -278,4 +345,96 @@ h2 {
   .card:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+/* FOOTER */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body {
+  font-weight: 400;
+  background-color: #000;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: black;
+}
+
+.footer img {
+  width: 15%;
+  vertical-align: middle;
+}
+
+.logoF {
+  text-align: center;
+
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1.5px solid white;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+  color: #723CBC;
+}
+
+.footer ul {
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+  color: #723CBC;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: blueviolet;
 }
