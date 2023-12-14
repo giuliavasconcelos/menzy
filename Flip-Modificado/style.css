@@ -17,7 +17,7 @@ body {
 
 .wrapper {
   width: 70rem;
-  height: 100vh;
+  height: 80vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -99,7 +99,7 @@ body {
   /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
   background-image: linear-gradient(
     rgb(24,24,24), rgb(24,24,24)
-  ), url(../assets/cards/drake.jpg);
+  ), url(../assets/cards/veigh.jpg);
   background-blend-mode: soft-light;
 }
 .card__img6 {
@@ -108,7 +108,7 @@ body {
   /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
   background-image: linear-gradient(
     rgb(24,24,24), rgb(24,24,24)
-  ), url(../assets/cards/drake.jpg);
+  ), url(../assets/cards/Derek.jpg);
   background-blend-mode: soft-light;
 }
 .card__img3 {
@@ -189,6 +189,13 @@ h2 {
   font-weight: 900;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.titulo {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+
 }
 
 .cta__text {
