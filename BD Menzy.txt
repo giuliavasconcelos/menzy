@@ -1,3 +1,11 @@
+Hospedagem (Online)
+
+BD: devsse70_menzy
+Usuário: devsse70_menzy
+Senha:(VCGDuD,B)Ti
+
+-- _________________________________
+
 CREATE DATABASE menzy;
 
 USE menzy;
