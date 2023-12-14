@@ -1,3 +1,79 @@
+<<<<<<< Updated upstream
+=======
+/*header*/
+/* .header1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* background: black; */
+  /* padding-top: 90px;
+  
+} */
+/* .nav-header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: black;
+  z-index: 100;
+}
+
+.nav-menu-header ul{
+  display: flex;
+  padding-left: 90%;
+}
+.nav-menu-header ul li{
+  list-style-type: none;
+}
+.nav-menu-header ul li .link-header{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+  
+}
+.link-header:hover, .active{
+  border-bottom: 2px solid #fff;
+}
+
+.img-header {
+  height: 50px;
+  width: 150px;
+  margin-top: 23px;
+}
+.nav-button .btn{
+color: #fff;
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s ease;
+  /* padding-top: 50px; */
+  /* margin-bottom: 30px;
+  
+} */
+
+  
+  /* respansividade do header
+  
+  @media screen and (max-width: 500px) {
+    .collapse  ul li a, 
+    #navbarSupportedContent li {
+      float: none !important;
+      display: block !important;
+     
+    }
+  } */
+
+>>>>>>> Stashed changes
 /* PAGAMENTO */
 body {
   font-family: 'Montserrat';
@@ -394,6 +470,7 @@ aside > a button:hover {
   } */ 
 
     /* FOOTER */
+<<<<<<< Updated upstream
     /* * {
       margin: 0;
       padding: 0;
@@ -450,6 +527,94 @@ aside > a button:hover {
   
   .footer .social a:hover {
       opacity: 0.9;
+=======
+    /* footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #111;
+        height: auto;
+        width: 100vw;
+    
+        padding-top: 40px;
+        color: #fff;
+    }
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h3{
+        font-size: 2.1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .footer-content img{
+        height: 70px;
+        width: 225px;
+    
+    }
+    
+    .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: #cacdd2;
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    
+    .socials li{
+        margin: 0 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 5px;
+    
+        border-radius: 50%;
+    
+    }
+    .socials a i{
+        font-size: 1.1rem;
+        width: 20px;
+    
+    
+        transition: color .4s ease;
+    
+    }
+    .socials a:hover i{
+        color: #723CBC;
+    }
+    
+    .footer-bottom{
+        background: #000;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        height: 80%;
+    }
+    .footer-bottom p{
+    float: left;
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .footer-bottom p a{
+>>>>>>> Stashed changes
       color: #723CBC;
   }
   
@@ -487,4 +652,4 @@ aside > a button:hover {
       color: blueviolet;
   }
     
-    
+     */
