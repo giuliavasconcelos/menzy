@@ -68,7 +68,6 @@ color: #fff;
   height: 500px !important;
 }
 
-
 /* Estilos gerais para o corpo da página */
 body {
   background-color: #000000; /* Cor de fundo do corpo */
@@ -118,7 +117,7 @@ body {
 /* BOTÕES */
  body {
   width: 100vw;
-  background-color: #1D1D1D;
+  /* background-color: #1D1D1D; */
   margin: 0;
   font-family: 'Montserrat';
 } 
@@ -152,101 +151,48 @@ body {
   }
 }
 
-.card {
-  width: 100%;
-  max-width: 250px;
-  min-width: 200px;
-  height: 250px;
-  background-color: #292929;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
-  font-size: 16px;   
-  transition: all 0.3s ease;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
 .button {
-  width: 100%;
-  max-width: 250px;
-  min-width: 200px;
-  height: 250px;
-  background-color: #292929;
+  display: inline-block;
   margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
-  font-size: 16px;   
-  transition: all 0.3s ease;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
+  outline: none;
+  padding: 0;
 }
 
-.button .title {
-  width: 100%;
+.button:hover .card,
+.button:focus .card {
+  background-color: #1D1D1D;
+  color: #fff;
+}
+
+/* Estilos para os cartões */
+.card {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: #111;
+  color: #1D1D1D;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para o texto do título */
+.title {
   margin: 0;
+  font-size: 16px;
+  color: #fff;
   text-align: center;
-  margin-top: 30px;
+}
+
+a {
   color: white;
+  text-decoration: none;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 20px;
-  font-style: bold;
+  font-family: 'Montserrat';
 }
 
-.card .text {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-  font-weight: 200;
-  letter-spacing: 2px;
-  opacity: 0;
-  max-height:0;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  height: 270px;
-}
-
-.card:hover .info {
-  height: 90%;
-}
-
-.card:hover .text {
-  transition: all 0.3s ease;
-  opacity: 1;
-  max-height:40px;
-}
-
-/* .card:hover .icon {
-  background-position: -120px;
-  transition: all 0.3s ease;
-} */
-
-/* .card:hover .icon i {
-  background: linear-gradient(90deg, #FF7E7E, #FF4848);
-   -webkit-background-clip: text; 
- -webkit-text-fill-color: transparent;
-  opacity: 1;
-  transition: all 0.3s ease;
-} */
 
 
 /* ___________________________________________________________________________________________________ */
