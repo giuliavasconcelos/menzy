@@ -11,17 +11,19 @@
 }
 
 body{
-    background: url("../assets/login3.jpg")  ;
+    background: url("../../assets/login3.jpg")  ;
     background-size: cover ;
     background-repeat: no-repeat ;
     background-attachment: fixed ; 
     overflow: hidden ;
-    background-image: url("../assets/login3.jpg");
+    background-image: url("../../assets/login3.jpg");
 }
+
 /* Header */
 header{
     height: 65vh;
 }
+
 .header1{
     display: flex;
     justify-content: center;
@@ -119,6 +121,7 @@ header{
 .nav-menu ul li .active {
     border-bottom: 2px solid #fff;
 }
+
 /* FORM BOX */
 .nav-button .btn{
   color: #fff;
