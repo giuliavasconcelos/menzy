@@ -4,11 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
   background: black;
   padding-top: 90px;
-  
 }
+
 .nav-header{
   position: fixed;
   top: 0;
@@ -25,9 +24,11 @@
   display: flex;
   padding-left: 90%;
 }
+
 .nav-menu-header ul li{
   list-style-type: none;
 }
+
 .nav-menu-header ul li .link-header{
   text-decoration: none;
   font-weight: 500;
@@ -35,8 +36,8 @@
   padding-bottom: 15px;
   margin: 0 25px;
   font-family: 'Montserrat';
-  
 }
+
 .link-header:hover, .active{
   border-bottom: 2px solid #fff;
 }
@@ -46,6 +47,7 @@
   width: 150px;
   margin-top: 5px;
 }
+
 .nav-button .btn{
 color: #fff;
   width: 130px;
@@ -56,48 +58,48 @@ color: #fff;
   border-radius: 30px;
   cursor: pointer;
   transition: .3s ease;
-  /* padding-top: 50px; */
   margin-bottom: 30px;
-  
 }
 
-/* _______________________________________________________________________________ */
 /*CAROUSEL*/
 
 .carousel-inner {
   height: 500px !important;
 }
 
-/* Estilos gerais para o corpo da página */
 body {
-  background-color: #000000; /* Cor de fundo do corpo */
-  color: #FFF; /* Cor do texto */
+  background-color: #000000; 
+  color: #FFF; 
 }
 
-/* Classes para diferentes cores de fundo */
 .primary-bg-color {
   background-color: #252525;
 }
+
 .destaque {
   background-color: #0D0D0D;
 }
+
 .secondary-bg-color {
   background-color: #976DF2;
 }
+
 .light-bg-color {
   background-color: #FCF5EB;
 }
+
 .dark-bg-color {
   background-color: #0D0D0D;
 }
 
-/* Classes para diferentes cores de texto */
 .primary-color {
   color: #976DF2;
 }
+
 .secondary-color {
   color: #F2F2F2;
 }
+
 .light-color {
   color: #FCF5EB;
 }
@@ -117,7 +119,6 @@ body {
 /* BOTÕES */
  body {
   width: 100vw;
-  /* background-color: #1D1D1D; */
   margin: 0;
   font-family: 'Montserrat';
 } 
@@ -167,7 +168,6 @@ body {
   color: #fff;
 }
 
-/* Estilos para os cartões */
 .card {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -178,7 +178,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilos para o texto do título */
 .title {
   margin: 0;
   font-size: 16px;
@@ -198,12 +197,6 @@ a {
 /* ___________________________________________________________________________________________________ */
 
 /* FOOTER */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat';
-} */
 
 body {
   font-weight: 400;
@@ -224,7 +217,6 @@ body {
 
 .logoF {
   text-align: center;
-
 }
 
 .footer p {
@@ -232,6 +224,7 @@ body {
   text-align: center;
   font-size: 18px;
 }
+
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
@@ -320,7 +313,7 @@ body {
 .centered {
   margin-top: 3%;
   text-align: center;
-  width: 100%; /* Opcional: torna o h1 ocupar toda a largura da página */
+  width: 100%;
   color: #723CBC;
 }
 

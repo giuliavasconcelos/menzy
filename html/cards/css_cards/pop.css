@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
     background: black;
     padding-top: 90px;
     
@@ -54,7 +53,6 @@
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
-    /* padding-top: 50px; */
     margin-bottom: 30px;
     
   }
@@ -87,7 +85,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: #dacabc; */
   }
   
   .card {
@@ -95,7 +92,6 @@
     max-width: 20rem;
     height: 30rem;
     perspective: 60rem;
-    /* background-color: #dacabc; */
   }
   
   .card__side {
@@ -114,39 +110,35 @@
   }
   
   .card__side .card__side--front {
-    /* background-color: #dacabc; */
     background: #1D1D1D;
   }
   
   .card:hover .card__side--back {transform: rotateY(0);}
   .card:hover .card__side--front {transform: rotateY(180deg);}
   
-  /* Front Side */
+  /* FRONT */
   .card__img {
     background-size: cover;
     height: 17rem;
-    /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
     background-image: linear-gradient(
       rgb(24,24,24), rgb(24,24,24)
-    ), url(../css/assets_cards/matue.jfif);
+    ), url(../artistas/pop/taylor.jpg);
     background-blend-mode: soft-light;
   }
   .card__img2 {
     background-size: cover;
     height: 17rem;
-    /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
     background-image: linear-gradient(
       rgb(24,24,24), rgb(24,24,24)
-    ), url(../css/assets_cards/veigh.jpg);
+    ), url(../artistas/pop/lana.png);
     background-blend-mode: soft-light;
   }
   .card__img3 {
     background-size: cover;
     height: 17rem;
-    /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
     background-image: linear-gradient(
       rgb(24,24,24), rgb(24,24,24)
-    ), url(../css/assets_cards/drake.jpg);
+    ), url(../artistas/pop/sabrina.jfif);
     background-blend-mode: soft-light;
   }
 
@@ -170,7 +162,7 @@
     background-color: #1D1D1D;
   }
   
-  /* Back Side */
+  /* BACK */
   .card__side--back {
     transform: rotateY(-180deg);
     background-color: #1D1D1D;

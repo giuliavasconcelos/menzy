@@ -1,14 +1,12 @@
-
-/* Header */
+/* HEADER */
 .header1{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
   background: black;
   padding-top: 90px;
-  
 }
+
 .nav-header{
   position: fixed;
   top: 0;
@@ -25,17 +23,19 @@
   display: flex;
   padding-left: 90%;
 }
+
 .nav-menu-header ul li{
   list-style-type: none;
 }
+
 .nav-menu-header ul li .link-header{
   text-decoration: none;
   font-weight: 500;
   color: #fff;
   padding-bottom: 15px;
   margin: 0 25px;
-  
 }
+
 .link-header:hover, .active{
   border-bottom: 2px solid #fff;
 }
@@ -45,6 +45,7 @@
   width: 150px;
   margin-top: 23px;
 }
+
 .nav-button .btn{
 color: #fff;
   width: 130px;
@@ -55,35 +56,11 @@ color: #fff;
   border-radius: 30px;
   cursor: pointer;
   transition: .3s ease;
-  /* padding-top: 50px; */
   margin-bottom: 30px;
-  
 }
 
 body {
   font-family: 'Montserrat';
-}
-/* respansividade do header */
-
-/* @media screen and (max-width: 500px) {
-  .collapse  ul li a  
-  #navbarSupportedContent li {
-    float: none !important;
-    display: block !important;
-  }
-} 
-Contato
-
-/* * {
-  margin: 0;
-  box-sizing: border-box;
-  
-  
-} */
-
-body {
-  font-family: 'Montserrat';
-  /* background: #000; */
 }
 
 .container {
@@ -108,14 +85,11 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
-  
 }
 
 .contact-form {
   background-color: #723CBC;
   position: relative;
-  
 }
 
 form {
@@ -269,25 +243,20 @@ textarea.input {
 .icon {
   width: 28px;
   margin-right: 0.7rem;
-  
-  
 }
 
 .social-media {
   padding: 2rem 0 0 0;
-  
 }
 
 .social-media p {
   color: #fff9f9;
 }
 
-
 .social-icons {
   display: flex;
   margin-top: 0.5rem;
   background-color: transparent;
-  
 }
 
 .social-icons a {
@@ -299,15 +268,10 @@ textarea.input {
   font-size: 30px;
 }
 
-
-
-
 .social-icons a:hover {
   transform: scale(1.05);
   color: #a37ed7;
-    
 }
-
 
 .square {
   position: absolute;
@@ -341,7 +305,6 @@ textarea.input {
     height: 350px;
   }
 
-
   .text {
     margin: 1rem 0 1.5rem 0;
   }
@@ -359,8 +322,6 @@ textarea.input {
   .contact-info:before {
     display: none;
   }
-
-
 
   form,
   .contact-info {
@@ -397,7 +358,7 @@ textarea.input {
 }
 
 /* ___________________________________________________________________________________________________ */
-/* Footer */
+/* FOOTER */
 
 * {
   margin: 0;
